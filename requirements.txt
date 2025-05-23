@@ -1,0 +1,8 @@
+fastapi
+google-adk
+google-api-core
+google-cloud-aiplatform
+google-genai
+pydantic
+python-dotenv
+uvicorn
