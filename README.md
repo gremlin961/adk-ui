@@ -72,7 +72,7 @@ To run this project, you'll need to set up your environment and install the nece
     ```bash
     python main.py
     ```
-    The application should now be running, and you can access the UI in your browser (typically at `http://127.0.0.1:5000` or as specified by the `main.py` script).
+    The application should now be running, and you can access the UI in your browser (typically at `http://127.0.0.1:8000` or as specified by the `main.py` script).
 
 ## Project Structure
 
