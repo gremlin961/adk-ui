@@ -50,7 +50,7 @@ To run this project, you'll need to set up your environment and install the nece
     If you prefer to use a Google API Key directly, your `.env` file might look like this:
     ```env
     # Replace with your actual Google API Key
-    GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
+    GOOGLE_API_KEY=YOUR_GOOGLE_API_KEY
 
     # Other necessary variables for the ADK agent, if any
     # ADK_AGENT_ID="YOUR_AGENT_ID"
@@ -60,9 +60,9 @@ To run this project, you'll need to set up your environment and install the nece
     If you want to use Vertex AI, configure your `.env` file as follows. This is the current recommended setup for this project.
     ```env
     GOOGLE_GENAI_USE_VERTEXAI=TRUE
-    GOOGLE_CLOUD_PROJECT="YOUR_PROJECT_ID"  # Replace with your Google Cloud Project ID
-    GOOGLE_CLOUD_LOCATION="global"          # Or your specific location
-    GOOGLE_CLOUD_REGION="us-central1"       # Or your specific region
+    GOOGLE_CLOUD_PROJECT=YOUR_PROJECT_ID  # Replace with your Google Cloud Project ID
+    GOOGLE_CLOUD_LOCATION=global          # Or your specific location
+    GOOGLE_CLOUD_REGION=us-central1       # Or your specific region
     ```
     Ensure you replace `"YOUR_PROJECT_ID"` with your actual Google Cloud Project ID. The `LOCATION` and `REGION` might also need adjustment based on your Vertex AI setup.
 
