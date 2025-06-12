@@ -60,36 +60,12 @@ from dotenv import load_dotenv
 
 # --- Configuration ---
 load_dotenv()
-project_id = os.environ.get('GOOGLE_CLOUD_PROJECT') # Your GCP Project ID
-location = os.environ.get('GOOGLE_CLOUD_LOCATION') # Vertex AI RAG location (can be global for certain setups)
-region = os.environ.get('GOOGLE_CLOUD_REGION') # Your GCP region for Vertex AI resources and GCS bucket
-
-
 
 
 # Ignore all warnings
 warnings.filterwarnings("ignore")
 # Set logging level to ERROR to suppress informational messages
 logging.basicConfig(level=logging.ERROR)
-
-
-
-
-
-# --- Environment Setup ---
-# Set environment variables required by some Google Cloud libraries
-os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "1" # Instructs the google.genai library to use Vertex AI backend
-os.environ["GOOGLE_CLOUD_PROJECT"] = project_id
-os.environ["GOOGLE_CLOUD_LOCATION"] = region
-
-# --- Initialize Vertex AI SDK ---
-# Initialize the Vertex AI client library with project and location/region details
-vertexai.init(project=project_id, location=region)
-
-
-
-
-
 
 
 # --- Agent Tool Definitions ---
